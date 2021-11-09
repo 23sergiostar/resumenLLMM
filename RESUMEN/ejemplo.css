@@ -1,0 +1,18 @@
+/* Esta es nuestra pagina de hoja de estilo CSS donde daremos estilo a nuestro html */
+body{
+    background-color: rgb(255, 129, 192);
+}
+
+h1{
+    color: rgb(0, 51, 109);
+    text-align: left;
+}
+
+h2{ /* Con la etiqueta nos dirigimos a todas y todas cambiaran al estilo definido */
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.prueba{ /* Con el . abrimos una clase */
+    color: beige;
+}

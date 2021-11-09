@@ -1,0 +1,79 @@
+Resumen HTML 
+
+Al empezar un documento abriremos el tipo de DOCTYPE 
+<!DOCTYPE html>
+<html>
+
+Dentro del head metes el meta charset, titulo y links a css externo o java externo.
+<head>
+    <meta charset="UTF-8">
+    <title>Resumen</title> -- Titulo que aprecera arriba de la pestaña
+    <link rel="stylesheet" href="ejemplo.css"> -- Enlace a hoja de estilos CCS
+</head>
+
+Dentro del body meteremos todo aquello con lo que vayamos a trabajar como tablas, titulos, etc.
+<body>
+    <h1> Titulo H1 </h1> -- Este es un titulo grande, y de aqui hasta el h6 son todo titulos.
+
+    <h2>Listas Desordenada</h2> -- Titulo de tipo 2
+    <ul> -- Con esto abrimos una unordered list
+        <li><a href="https://es.wikipedia.org/wiki/Shiba_Inu"> Shiba Inu</a></li> 
+        <li><a href="https://es.wikipedia.org/wiki/Pastor_alemán">Pastor Alem&aacute;n</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Golden_retriever">Golden Retrivier</a></li>
+    </ul>  
+
+    <h2>Lista Ordenada</h2>
+    <ol> -- Con esto abrimos una ordered list
+        <li><a href="https://es.wikipedia.org/wiki/Gato_persa">Gato Persa</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Sphynx">Sphynx</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Gato_siamés">Gato Siam&eacute;s</a></li>
+    </ol> 
+
+    Con la etiqueta form abrimos un formulario para rellenar datos con las etiquetas input 
+    <form method="`GET/POST" action="ejemplo.php"> -- El metodo POST no nos enseñara los datos, el GET si, el ACTION es donde se guardara la informacion
+        <label for="nombre">Introduzca su nombre: </label> <br> -- Los LABEL se usan para que al hacer clic sobre ellos se meta en un campo tipo input o cualquier otro.
+        <input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre"> <br> -- El PLACEHOLDER es lo que te parecera en el input si no pones nada
+        <label for="email">Introduzca su email: </label> <br>
+        <input type="email" name="email" id="email" placeholder="Introduzca un email"> <br> -- El input necesita el tipo del que va a ser y luego le ponemos un name y un id.
+        <label for="edad">Introduzca su edad: </label> <br>
+        <input type="number" name="edad" id="edad" placeholder="Introduzca su edad"> <br>
+        <input type="radio" name="mayormenor" id="mayormenor" value="Mayor"><label for="Mayor">Mayor</label><br>
+        <input type="radio" name="mayormenor" id="mayormenor" value="Menor"><label for="Menor">Menor</label><br>
+        <br>
+    <input class="buttonc" type="button" value="Haz Clic"> -- Esto es un boton sin ningun valor
+    <input class="buttonc"type="reset" value="Resetear Formulario"> -- Este boton hace que se resetee el formulario
+    <input type="submit" value="ENVIAR"> -- Este boton sirve para que el formulario se envie al action que hemos creado
+    </form>
+
+    Con la etiqueta table abrimos una tabla
+    <table border="1%">
+        <tr> -- Esto es una fila de la tabla
+            <td><img src="Imagenes/perro2.jpeg" width="300"></td> -- Estos son los datos de la tabla
+            <th><a href="https://es.wikipedia.org/wiki/Shiba_Inu"> Shiba Inu </a></th> -- Este es el header de la tabla
+        </tr>
+        <tr>
+            <td colspan="2"> -- Con colspan lo que hacemos es comernos 2 filas de la tabla
+            <input class="buttonc" type="button" value="Haz Clic">
+            <input class="buttonc"type="reset" value="Resetear Formulario">
+            <input class="submit" type="submit" value="Enviar Formulario"></td>
+        </tr>
+        <tr>
+            <td><label for="edad">Seleccione su edad: </label></td>
+            <td> <select name="edad"> -- Con select abrimos un desplegable con dsitintas opciones
+            <option value="Seleccione una opcion">Seleccione una opción</option>
+            <option value="17">17</option> 
+            <option value="18">18</option> 
+            <option value="19">19</option>
+            <option value="20">20</option> 
+            <option value="21">21</option> 
+            <option value="22">22</option> 
+            </select>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+
